@@ -1,0 +1,32 @@
+.form-control{
+    border-color: #051f2f;
+}
+
+.mb-3{
+    width: 300px;
+    padding: 10px;
+}
+
+
+
+.form-label,.form-check-label,.form-text{
+    color: #051f2f ;
+}
+
+.btn{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.container{
+    background-color:light;
+    height: 550px;
+    float: right;
+    margin-top: 50px;
+    margin-right: 500px;
+    width: 400px;
+    padding: 30px;
+    border-style:groove ;
+    border-color: #9ff1f1;
+
+}

@@ -1,0 +1,52 @@
+
+<body>
+
+    <app-navbar></app-navbar>
+
+   
+  <!--register form-->
+  <div class="container">
+    <div class="row">
+        <div class="col">
+            <form (ngSubmit)="login()" [formGroup]="registerForm">
+              <div class="mb-3">
+                <label for="name1" >Name</label>
+                <input name="name" formControlName="name" type="text" class="form-control" id="name1" placeholder=" Name">
+              </div>
+              <!-- invalid name -->
+              <div *ngIf="this.registerForm.get('name')?.errors&&this.registerForm.get('name')?.touched" class="text-danger" >Invalid Name</div>
+              <!--  -->
+                <div class="mb-3">
+                  <label >Email address</label>
+                  <input name="email" formControlName="email" type="email" class="form-control" id="Email1" placeholder=" Email address">
+                </div>
+                <!-- invalid email -->
+                <div *ngIf="this.registerForm.get('email')?.errors&&this.registerForm.get('email')?.touched" class="text-danger" >Invalid Email</div>
+
+                <div class="mb-3">
+                  <label for="Password1">Password</label>
+                  <input name="pswd" formControlName="pswd" type="password" class="form-control"id="Password1" placeholder="Password">
+                </div>
+           
+            <!-- invalid pswd -->
+            <div *ngIf="this.registerForm.get('pswd')?.errors&&this.registerForm.get('pswd')?.touched" class="text-danger" >Invalid password</div>
+            <div class="mb-3">
+              <label for="Password1">Confirm Password</label>
+              <input name="pswd" formControlName="pswd" type="password" class="form-control"id="Password2" placeholder="Password">
+            </div>
+       
+        <!-- invalid pswd -->
+        <div *ngIf="this.registerForm.get('pswd')?.errors&&this.registerForm.get('pswd')?.touched" class="text-danger" >Invalid password</div>
+                
+                <button  type="submit" class="btn btn-primary">Register</button>
+
+                
+              </form>
+        </div>
+    
+      
+    </div>
+</div>
+
+    
+</body>

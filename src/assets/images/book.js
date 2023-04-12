@@ -1,0 +1,1 @@
+[{"id":1,"itinerary":"ANTARCTICA EXPRESS AIR-CRUISE","departure":"Nov15,2023","ship":"QUEEN EXSEA","duration":"6 days"},{"id":2,"itinerary":"GREENLAND DISKOBAY","departure":"Nov20,2023","ship":"SPIRIT OF EXSEA","duration":"6 days"},{"id":3,"itinerary":"LUXSEA","departure":"Nov25,2023","ship":"SPIRIT OF EXSEA","duration":"6 days"}]

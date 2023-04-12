@@ -1,0 +1,61 @@
+<body style="background-color: #ffffff;">
+
+   <!-- navbar -->
+    <app-navbar></app-navbar>
+
+
+   
+        <!-- background img -->
+        
+    
+    <!--login form-->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form (ngSubmit)="login()" [formGroup]="loginForm">
+                    <div class="mb-3">
+                      <label >Email address</label>
+                      <input name="email" formControlName="email" type="email" class="form-control" id="Email1" placeholder=" Email address">
+                    </div>
+                    <!-- invalid email -->
+                    <div *ngIf="this.loginForm.get('email')?.errors&&this.loginForm.get('email')?.touched" class="text-danger" >Invalid Email</div>
+                    <div class="mb-3">
+                      <label for="Password1">Password</label>
+                      <input name="pswd" formControlName="pswd" type="password" class="form-control"id="Password1" placeholder="Password">
+                    </div>
+               
+                <!-- invalid pswd -->
+                <div *ngIf="this.loginForm.get('pswd')?.errors&&this.loginForm.get('pswd')?.touched" class="text-danger" >Invalid password</div>
+                    
+                    <button  type="submit" class="btn btn-primary">Login</button>
+    
+                    &nbsp;
+                    <div style="margin-top: 20px; margin-left: 20px;">
+                        <span style="color:#051f2f;">
+                            New User ? Click here to  <a routerLink="/register">Register</a>
+                        </span>
+                    </div >
+                  </form>
+            </div>
+        
+          
+        </div>
+    </div>
+    
+    <!-- logo -->
+    <div class="continer" id="log1">
+        <div class="row">
+            <div class="col">
+                <img style="height: auto; width: auto; max-height: 72px; max-width: 250px;" [src]="myimage" alt="">
+               <p>
+                   <span style="color: #051f2f; "><b>Log into the worlds of adventure, expedition, and more.</b></span>
+    
+               </p>    
+            </div>
+    
+        </div>
+    
+    </div>
+   
+        
+</body>

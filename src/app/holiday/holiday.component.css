@@ -1,0 +1,17 @@
+
+.col-md {
+    border-style: ridge;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 1000px;
+    margin-left: 250px;
+    margin-top: 100px;
+}
+.button{
+    margin-top: 50px;
+     position: relative;
+      left: -300px;
+      padding: 20px;
+}
